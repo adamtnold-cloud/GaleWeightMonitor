@@ -201,8 +201,8 @@ def setup_streams(master):
    
    
     request_message_interval(master, mavutil.mavlink.MAVLINK_MSG_ID_HEARTBEAT, 1)      # HEARTBEAT at 1 Hz
-    request_message_interval(master, mavutil.mavlink.MAVLINK_MSG_ID_SYS_STATUS, 2)     # SYS_STATUS at 2 Hz
-    request_message_interval(master, mavutil.mavlink.MAVLINK_MSG_ID_BATTERY_STATUS, 2) # battery status at 2 hz
+    request_message_interval(master, mavutil.mavlink.MAVLINK_MSG_ID_SYS_STATUS, 10)     # SYS_STATUS at 10 Hz
+    request_message_interval(master, mavutil.mavlink.MAVLINK_MSG_ID_BATTERY_STATUS, 10) # battery status at 10 hz
     request_message_interval(master, mavutil.mavlink.MAVLINK_MSG_ID_VFR_HUD, 10)       # VFR_HUD at 10 HZ to get altitude and climb data
     request_message_interval(master, mavutil.mavlink.MAVLINK_MSG_ID_GLOBAL_POSITION_INT, 10) # GPS to get alt
    
